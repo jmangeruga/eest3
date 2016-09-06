@@ -1,3 +1,14 @@
 app:
     resource: "@AppBundle/Controller/"
     type:     annotation
+#### Static content rounting
+contact:
+    path: /contacto
+    defaults:
+        _controller: FrameworkBundle:Template:template
+        template:    static/contacto.html.twig
+about:
+    path: /acerca_de
+    defaults:
+        _controller: FrameworkBundle:Template:template
+        template:    static/acerca_de.html.twig
