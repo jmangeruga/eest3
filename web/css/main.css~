@@ -1,0 +1,665 @@
+/* PALETA DE COLORES:
+		FONDO PAGINA: #003C96
+		FONDO ESTRUCTURA: #FFFFFF(Blanco)
+		FONDO MENU: #F0F0F0
+		FONDO TITULOS MENU: #2D5BA1
+		FONDO INFO PIE: #718FC8
+*/
+
+/*********************************************** INICIALIZACION *************************************************/
+* {
+	margin: 0;
+    	padding: 0;}
+
+img{
+  	border:0;}
+
+/********************************************* BODY *********************************************/	
+body{
+	background: rgb(0,60,150);
+	font-family: Arial, Helvetica, sans-serif;}
+
+/********************************************* ENCABEZADO DE PAGINA *********************************************/
+#titular{
+	margin: 0 auto;
+	width: 950px;
+	border-bottom: 2px groove rgb(45,91,161);
+	box-shadow: 0px 2px 50px rgb(30,30,30);}
+
+#imgtitular{
+	background: url("../images/fondotitular.png") center no-repeat;
+	height: 157px;}
+	
+header .encoculto{
+	display: none;}
+
+#nav-superior{
+	margin-top: -26px;
+	padding-bottom: 5px;
+	text-align: center;
+	font-weight: bolder;
+	font-size: 90%;}
+
+#nav-superior a{
+	text-decoration: none;
+	margin-left: 30px;
+	color: white;}
+
+#nav-superior a:hover{
+	text-shadow: 1px 1px 10px black;}
+
+#nav-superior a:visited{
+	text-decoration: none;
+	margin-left: 30px;
+	color: white;
+	display: inline;
+	padding: 0;}
+
+#estructura{
+	background: rgb(255,255,255);
+	margin: 0 auto;
+	margin-bottom: 2%;
+	padding-bottom: 3%;
+	width: 950px;
+	box-shadow: 0px 2px 50px rgb(30,30,30);
+	border-radius: 0 0 8px 8px;
+	border-radius: 4px 4px 4px 4px;}
+		
+/********************************************* MENU PRINCIPAL *********************************************/
+#estructura nav{
+	float: left;
+	font-size: 90%;
+	padding-top: 14px;
+	text-align: center;
+	width: 210px;}
+
+#estructura nav ul{
+	list-style: none;
+	padding-left: 0%;
+	width: 100%;}
+
+#estructura nav ul li{
+	font-size: 85%;}
+	
+#estructura nav ul .titmen{
+	background: url("../images/titmenu2.png") no-repeat center;
+	color: white;
+	font-size: 100%;
+	margin: 5px auto;
+	font-weight: bolder;
+	margin-bottom: 5px;
+	margin-top: 5px;
+	padding-top: 4%;
+	padding-bottom: 3%;
+	box-shadow: 1px 0px 2px #000000;
+	border-radius: 0px 10px 10px 0px;}
+
+#estructura nav ul li a, nav a:visited{
+	color: black;
+	display: block;
+	padding-top: 4%;
+	padding-bottom: 2%;
+	text-decoration: none;}
+
+#estructura nav a:focus {
+	outline:0px;}
+	
+#estructura nav .itmen:hover,#estructura nav .itmen a:hover{
+	background: rgb(45,91,161);
+	background: rgb(210,210,210);
+	text-shadow: 1px 1px 10px black;
+	color: black;}
+	
+#estructura nav ul .actual{	
+	background: rgb(45,91,161);
+	background: rgb(210,210,210);
+	text-shadow: 1px 1px 10px black;
+	color: black;}
+
+#estructura  #linktecnologias{
+	margin-top: 20px;}
+
+#estructura #linklicencia{
+	margin-top: 5%;}
+
+/********************************************* CONTENIDO DE PAGINA *********************************************/
+#estructura #imcargando{
+	margin: 25% 33%;}
+	
+#estructura .novedad, #estructura .itemesp, #estructura .enlc{
+	background: #F0F0F0;
+	border-radius: 10px;
+	border: 1px solid rgb(225,225,225);
+	box-shadow: 0px 0px 5px rgb(225,225,225);
+	margin-top: 12px;
+	margin-bottom: 20px;
+	padding-bottom: 6px;}
+
+#estructura .novedad:hover, #estructura .itemesp:hover,#estructura .enlc:hover {
+	box-shadow: 0px 0px 5px rgb(180,180,180);}
+
+#estructura .novedad a,#estructura .novedad a:visited{
+	text-decoration: none;
+	color: black;}
+
+#estructura .itemesp{
+	display: block;
+	padding: 5px;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-weight: bolder;
+	text-decoration: none;
+	color: black;}
+
+#estructura .enlc{
+	margin-top: 10px;
+	width: 50px;
+	padding: 10px;
+	font-weight: bolder;}
+
+#estructura .footesp{
+	margin-top: 20px;}
+
+#estructura .footesp a{
+	text-decoration: none;
+	color: black;}
+
+#estructura #espizq{
+	width: 255px;
+	float:left;}
+
+#estructura #espder{
+	width: 255px;
+	float:right;}
+	
+#estructura .contenido{
+	float:left;
+	width: 535px;
+	margin-left: 7px;
+	padding-top: 7px;}
+
+#estructura .panel-us{
+	color: rgb(160,160,160);
+	margin-top: 5px;
+	padding-bottom: 1%;
+	padding-top: 1%;
+	font-weight: bolder;
+	text-align: center;
+	font-size: 80%;
+	border-bottom: 1px solid rgb(225,225,225);}
+
+#estructura .panel-us h4{
+	display: inline;}
+
+#estructura .panel-us a,#estructura .panel-us a:visited{
+	text-decoration: none;
+	color: rgb(160,160,160);}
+
+#estructura .panel-us a:hover{
+	border-bottom: 2px solid black;
+	color: black;}
+
+#estructura .contenido-error{
+	padding-top: 10px;}
+
+#estructura #visor-form{
+	width: 535px;
+	margin: 0 auto;}
+	
+#estructura .titnovedad{
+	background: rgb(225,225,225);
+	border-bottom: 2px solid rgb(113,143,200);
+	border-radius: 0px 0 0 10px;
+	text-align: center;
+	font-size: 100%;
+	font-weight: bolder;
+	letter-spacing: 2px;
+	margin-top: 10px;
+	padding-bottom: 1%;
+	padding-top: 1%;}
+
+#estructura .titnovedad{
+	margin-left: 2%;}
+
+#estructura .titnovedad a{
+	color: black;
+	text-decoration: none;}
+
+#estructura .titparrafo{
+	background: #F0F0F0;
+	color: black;
+	border: 1px solid rgb(225,225,225);
+	margin-top: 12px;
+	padding-bottom: 1%;
+	padding-top: 1%;
+	text-align: center;
+	font-size: 140%;
+	font-weight: bolder;}
+
+#estructura .titseccion{
+	text-align: center;
+	border-bottom: 1px solid rgb(200,200,200);
+	color: rgb(150,150,150);
+	width: 95%;
+	margin: 0 auto;}
+
+#estructura .img-articulo{
+	float: left;
+	margin-top: 10px;
+	padding-right: 2px;}
+
+#estructura .novedad footer{
+	width: 96%;}
+
+#estructura .novedad footer{
+	margin: 0 auto;
+	margin-top: 2px;
+	border-top: 1px dotted rgb(113,143,200);}
+
+#estructura .novedad footer time{
+	font-size: 80%;
+	margin-left: 85%;}
+	
+#estructura .texto{
+	font-size: 90%;
+	line-height: 1.5em;
+	text-align: justify;
+	padding: 1%;}
+	
+#estructura .resumen{
+	line-height: 1.5em;
+	padding: 2%;
+	padding-bottom: 0;
+	font-size: 80%;
+	text-align: justify;}
+	
+#estructura .etiqueta{
+	font-size: 90%;
+	font-weight: bolder;}
+	
+ .formulario {
+	margin-top: 12px;
+	background: #F0F0F0;
+	border-radius: 10px;
+	border: 1px solid rgb(225,225,225);
+	box-shadow: 0px 0px 5px rgb(225,225,225);
+	padding-top: 5px;}
+
+ .formulario ol,.formulario ul{
+	list-style: none;
+	margin-left: 10%;}
+
+ .formulario ol li,.formulario ul li{
+	margin-bottom: 15px;}
+	
+ .formulario fieldset{
+	border: 0;
+	padding: 2%;}
+	
+ .formulario label{
+	font-size: 75%;
+	font-weight: bolder;
+	float: left;
+	width: 18%;
+	text-align:left;
+	margin-right: 1%;
+	color: black;
+	margin-top: 5px;}
+	
+ .formulario .entrada,#estructura .entradamens{
+	width: 250px;
+	border: 1px solid rgb(180,180,180);
+	background: white;
+	font-family: Arial, Helvetica, sans-serif;}
+
+ #estructura .entradamens{
+      	width: 370px;}
+
+ .formulario textarea{
+ 	font-family: Arial, Helvetica, sans-serif;
+        font-size: 90%;}
+
+ .formulario .entrada{
+	height: 25px;}
+
+ .formulario .entrada:hover,#estructura textarea:hover,#estructura .entradamens:hover{
+	box-shadow: 0 0 1px rgb(180,180,180);}
+
+ .formulario .entrada:focus,#estructura .entradamens:focus{
+	border: 1px solid rgb(100,100,100);}
+	
+ .formulario .boton{
+	color: rgb(150,150,150);
+	background: rgba(220,220,220,0.7);
+	border: 1px solid rgb(150,150,150);
+	border-radius: 3px;
+	padding: 5px;
+	width: 150px;
+	font-weight: bolder;
+	font-family: Arial, Helvetica, sans-serif;}
+
+ .formulario .boton:hover{
+	box-shadow: 2px 2px 1px rgba(180,180,180,0.5);
+	border: 1px solid rgb(100,100,100);
+	color: rgb(100,100,100);}
+
+ .formulario .boton:active{
+	border: 1px groove rgb(100,100,100);
+	box-shadow: 1px 1px 1px rgba(180,180,180,0.5);}
+	
+ .formulario .botonera{
+	padding: 0;
+	float: right;}
+
+ .formulario .seleccion-fecha{
+	border: 1px solid rgb(180,180,180);
+	background: white;
+	width: 70px;
+	height: 25px;}
+
+ .formulario .seleccion{
+	border: 1px solid rgb(180,180,180);
+	background: white;
+	width: 252px;
+	height: 25px;}
+
+#estructura .formulario .radio-horizontal li{
+	float: left;
+	padding: 0;
+	width: 150px;}
+
+#estructura .formulario .radio-horizontal input{
+	border: 1px solid yellow;
+	margin-left: 30px;}
+
+#estructura .formulario .error_list{
+	color: red;
+	font-size: 70%;
+	font-weight: bolder;
+	list-style: none;
+	margin-bottom: -15px;}
+
+#estructura .subtit1{
+	color: rgb(45,91,161);
+	margin-top: 10px;}
+
+#estructura .galeria{
+	width:505px;
+	padding:10px 9px 10px 10px;
+        margin: 10px auto;
+        clear:both;
+	text-align:center;
+	overflow:auto;
+        background: #F0F0F0;
+	border-radius: 10px;
+	border: 1px solid rgb(225,225,225);
+	box-shadow: 0px 0px 5px rgb(225,225,225);}
+
+#estructura .celda{
+	display:block;
+	width:150px;
+	height:150px;
+        padding:7px 4px 4px;
+	float:left;
+	margin:3px;}
+
+#estructura .h img{
+	padding-top:20px;}
+
+#estructura #mesasExam{
+	margin-bottom: 10px;}
+
+#estructura #material{
+	padding-top: 10px;}
+
+#estructura #mat-comp{
+	padding-top: 10px;}
+
+#estructura .mat-ind,#estructura .material-ind{
+	margin-bottom: 15px;}
+
+#estructura .mat-ind a,#estructura .mat-ind a:visited{
+	text-decoration: none;}
+
+#estructura .subtitaz{
+	color: #003C96;}
+
+#lat-derecho .formulario .error_list{
+	margin-bottom: -28px;}
+
+#estructura .logostec{
+	margin-right: 25px;}
+
+#lat-derecho{
+	float:right;
+	width: 180px;
+	margin-right: 7px;}
+
+#lat-derecho #fecha-actual{
+	background: #F0F0F0;
+	border: 1px solid rgb(225,225,225);
+	color: black;
+	border-radius: 10px;
+	box-shadow: 0px 0px 5px rgb(225,225,225);
+	margin-top: 19px;
+	text-align: center;
+	font-size: 70%;
+	font-weight: bolder;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	width: 180px;
+	float: right;}
+
+#lat-derecho #formLogin{
+	float: right;
+	padding: 0;
+	margin-top: 10px;
+	width: 100%;}
+
+#lat-derecho #formLogin .entrada{
+	width: 100px;
+	height: 20px;
+	margin-left: 20%;}
+
+#lat-derecho #formLogin ol{
+	width: 100%;
+	margin: 0;}
+
+#lat-derecho #formLogin label{
+	margin-left: 15px;}
+
+#lat-derecho #formLogin .boton{
+	width: 110px;
+	height: 25px;
+	padding: 0;}
+
+#lat-derecho #formLogin .botonera{
+	margin-top: 20px;
+	width: 101px;
+	float: bottom;
+	margin-left: 28%;}
+
+#lat-derecho #formLogin a,#formLogin a:visited{
+	text-decoration: none;
+	color: black;}
+
+#lat-derecho #formLogin h4{
+	margin-top: 10px;
+	margin-left: 10px;
+	border-bottom: 1px solid black;}
+
+#lat-derecho #formLogin h5{
+	margin-top: 10px;
+	margin-left: 15px;}
+
+#lat-derecho #formLogin #botonera-sesionAct{
+	margin-top: 44px;}
+
+#lat-derecho .nav-secundaria{
+	float: right;
+	width: 180px;
+	margin-top: 30px;}
+
+#lat-derecho .nav-secundaria header{
+	border-bottom: 1px dotted black;}
+
+#lat-derecho .nav-secundaria nav{
+	margin-top: 0px;}
+
+#lat-derecho .nav-secundaria nav h5{
+	text-align: left;
+	font-size: 80%;
+	margin-top: 5px;
+	color: rgb(113,143,200);}
+
+#lat-derecho .nav-secundaria nav h5 a,.nav-secundaria nav h5 a:visited{
+	color: rgb(45,91,161);	
+	text-decoration: none;
+	padding: 0;}
+
+#lat-derecho .nav-secundaria nav h5 a:hover{
+	border-left:2px solid rgb(45,91,161);}
+
+#estructura .cont-esp{
+	border-bottom: 1px solid rgb(150,150,150);}
+
+#estructura .grup-filtro{
+	width: 49%;
+	float: left;
+	padding: 0;}
+
+#estructura .grup-filtro ul li{
+	margin: 0;
+	padding: 0;}
+
+#estructura .grup-filtro ul li label{
+	font-weight: normal;
+	width: 150px;}
+
+#estructura .filtro-fijo{
+	padding: 15px;
+	padding-top: 5px;}
+
+#estructura .filtro-personal{
+	float: left;
+	margin-top: 10px;
+	width: 100%;}
+
+#estructura .filtro-personal ul{
+	margin-left: 23px;}
+
+#estructura .filtro-personal .entrada{
+	width: 210px;}
+
+#estructura #adicionales-esp{
+	margin-top: 10px;
+	margin-left: 5px;}
+
+#estructura #adicionales-esp ul{
+	margin-top: 5px;
+	list-style: none;}
+
+#estructura #adicionales-esp ul li{
+	font-size: 80%;
+	margin-left: 10px;}
+	
+#estructura .error{
+	border: 1px solid red;
+	border-radius: 10px;
+	background: rgb(240,122,122);
+	text-align: center;
+	padding: 10px;}
+
+#estructura #mensaje404{
+	margin-top: 10px;
+	margin-left: 15px;}
+	
+#estructura #regerror{
+	background: rgb(41,91,161);
+	color: white;
+	font-weight: bolder;
+	margin: 0 auto;
+	padding: 5px;
+	text-decoration: none;}
+	
+#estructura .piso{
+	clear: both;}
+
+#estructura #internos,#ubicacion{
+	margin-top: 10px;}
+
+#estructura #internos ul{
+	  list-style: none;}
+	
+/********************************************* PIE DE PAGINA *********************************************/
+#footer-general{
+	background: url("../images/fondopie.png") repeat-x;
+	border-top: 1px groove rgb(45,91,161);
+	color: white;
+	font-size: 85%;
+	height: 183px;}
+
+#footer-general #info{
+	background: rgb(113,143,200);
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	font-size: 95%;
+	font-weight: bolder;
+	margin: 20px auto;
+	margin-bottom: 10px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	text-align: center;
+	width: 90%;}
+
+#footer-general nav{
+	color: white;
+	font: bold 95%;
+	font-weight: bolder;
+	font-size: 95%;
+	margin-top: 5.5%;
+	margin-bottom: 1%;
+        margin-right: 15px;
+	text-align: center;
+	width: 350px;
+	float: right;}
+
+#footer-general #footinf{
+	width: 750px;
+	margin: 0 auto;
+	margin-top: 0px;
+	height: 100px;}
+
+#footer-general #footinf div {
+	border-right: 1px dotted white;
+	width: 90px;
+	height: 100px;
+	float: left;}
+
+#footer-general #footinf div h4{
+	float:left;
+	margin-top: 40px;}
+
+#footer-general #footinf #linksInteres{
+	float: left;
+	width: 300px;
+	text-align: left;
+	padding-left: 1%;
+	margin-top: 25px;}
+
+#footer-general #footinf #linksInteres a:hover{
+	border-bottom: none;
+	background: rgba(113,143,200,0.2);}
+
+#footer-general #footinf #linksInteres h5{
+	margin-top: 3px;}
+
+#footer-general nav a,#footer-general nav a:visited{
+	color: white;
+	text-decoration: none;
+	display: inline;
+	padding: 0;}
+
+#footer-general nav a:hover{
+	border-bottom: 2px solid white;}

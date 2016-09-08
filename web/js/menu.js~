@@ -1,0 +1,61 @@
+$(document).ready(function(){
+	loadFecha();
+	/******** Efectos en el menu ********/	
+	$(".itmen").mouseover(function(e){
+		$(this).animate({'letter-spacing':"5px"},"fast","linear");	
+	});
+	$(".itmen").mouseout(function(e){
+		$(this).animate({'letter-spacing':"0px"},"fast","linear");
+	});
+        $("a.oc-novedades").mouseover(function(e){
+                $(".novedades").attr("mostrar","true");
+        	$(".novedades").fadeOut('slow');
+		
+        });
+        $("a.ver-novedades").mouseover(function(e){
+        	$(".novedades").fadeIn('slow');
+		$(this).attr("mostrar","false");
+        });
+	marcarItemActual();
+});
+
+
+function marcarItemActual(){
+	$(".actual").removeClass("actual");
+	var itemActual = $(".contenido").attr("id");
+	$("#ir"+itemActual).addClass("actual");
+	
+}
+
+var ultimaURL = "";
+
+var nombreDia = new Array(7);
+nombreDia[0] = "Domingo";
+nombreDia[1] = "Lunes";
+nombreDia[2] = "Martes";
+nombreDia[3] = "Miércoles";
+nombreDia[4] = "Jueves";
+nombreDia[5] = "Viernes";
+nombreDia[6] = "Sábado";
+var nombreMes = new Array(12);
+nombreMes[0] = "enero";
+nombreMes[1] = "febrero";
+nombreMes[2] = "marzo";
+nombreMes[3] = "abril";
+nombreMes[4] = "mayo";
+nombreMes[5] = "junio";
+nombreMes[6] = "julio";
+nombreMes[7] = "agosto";
+nombreMes[8] = "septiembre";
+nombreMes[9] = "octubre";
+nombreMes[10] = "noviembre";
+nombreMes[11] = "diciembre";
+
+function loadFecha(){
+	var fecha = new Date();
+	var diaSemana = fecha.getDay();
+	var diaMes = fecha.getDate();
+	var mes = fecha.getMonth();
+	var anio = fecha.getFullYear();
+	var fechaMostrada = "<p>"+nombreDia[diaSemana]+", "+diaMes+" de "+nombreMes[mes]+" de "+anio+"</p>";
+	$("#fecha-actual").html(fechaMostrada);}

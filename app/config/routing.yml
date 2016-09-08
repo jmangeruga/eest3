@@ -1,3 +1,69 @@
 app:
     resource: "@AppBundle/Controller/"
     type:     annotation
+#### Static content rounting
+about:
+    path: /acerca_de
+    defaults:
+        _controller: FrameworkBundle:Template:template
+        template:    static/acerca_de.html.twig
+authorities:
+    path: /interes_general/autoridades
+    defaults:
+        _controller: FrameworkBundle:Template:template
+        template:    static/authorities.html.twig
+contact:
+    path: /contacto
+    defaults:
+        _controller: FrameworkBundle:Template:template
+        template:    static/contacto.html.twig
+history:
+    path: /historia
+    defaults:
+        _controller: FrameworkBundle:Template:template
+        template:    static/history.html.twig
+photogallery:
+    path: /galeria_imagenes
+    defaults:
+        _controller: FrameworkBundle:Template:template
+        template:    static/photogallery/index.html.twig
+specializations:
+    path: /especialidades
+    defaults:
+        _controller: FrameworkBundle:Template:template
+        template:    static/specializations/index.html.twig
+specializations_autom:
+    path: /especialidades/automotores
+    defaults:
+        _controller: FrameworkBundle:Template:template
+        template:    static/specializations/automotors.html.twig
+specializations_autom:
+    path: /especialidades/automotores
+    defaults:
+        _controller: FrameworkBundle:Template:template
+        template:    static/specializations/automotors.html.twig
+specializations_chemi:
+    path: /especialidades/quimica
+    defaults:
+        _controller: FrameworkBundle:Template:template
+        template:    static/specializations/chemistry.html.twig
+specializations_const:
+    path: /especialidades/construcciones
+    defaults:
+        _controller: FrameworkBundle:Template:template
+        template:    static/specializations/contructions.html.twig
+specializations_emech:
+    path: /especialidades/electromecanica
+    defaults:
+        _controller: FrameworkBundle:Template:template
+        template:    static/specializations/electromechanic.html.twig
+specializations_elect:
+    path: /especialidades/electronica
+    defaults:
+        _controller: FrameworkBundle:Template:template
+        template:    static/specializations/electronic.html.twig
+specializations_infor:
+    path: /especialidades/informatica
+    defaults:
+        _controller: FrameworkBundle:Template:template
+        template:    static/specializations/informatic.html.twig

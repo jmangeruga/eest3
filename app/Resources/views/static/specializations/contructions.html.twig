@@ -1,0 +1,20 @@
+{% extends 'default.html.twig' %}
+
+{% block content %}
+	<section id = "especialidades" class = "contenido">
+	<article class = "cont-esp">
+		<h3 class = "titparrafo"> Maestro mayor de obras</h3>
+		<p class = "texto"> Al egresar estará capacitado para:</p>
+		<p class = "texto"> Detectar y analizar las necesidades de un cliente y elaborar el proyecto de necesidades.</p>
+		<p class = "texto"> Elaborar soluciones constructivas técnicas, estéticas espaciales y económicas para un programa de necesidades determinado.</p>
+		<p class = "texto"> Evaluar y definir las soluciones técnico-constructivas más apropiadas. </p>
+		<p class = "texto"> Gestionar la planificación y documentación del proceso constructivo. </p>
+		<p class = "texto"> Dirigir, gestionar y administrar la ejecución de procesos constructivos y comunicar a terceros acontecimientos que surjan en el mismo. </p>
+		<p class = "texto"> Prestar servicios de evaluación técnica, esencialmente de manera independiente o participando de un equipo de trabajo. </p>
+	</article>
+	<footer class = "footesp">
+		<?php echo link_to('<div class = "enlc"> Volver </div>','/especialidades')
+		?>
+	</footer>
+</section>
+{% endblock %}

@@ -1,0 +1,38 @@
+{% extends 'default.html.twig' %}
+
+{% block content %}
+	<section id = "gimagenes" class = "contenido">
+	<div id = "espizq">	
+	  <a class = "itemesp" href = "<?php echo url_for('/galeria_imagenes/tinformatica') ?>">
+	    <img tittle = "Taller de informática" src= "https://lh3.googleusercontent.com/-zFwM6pJhyVo/UCFFFdpUNDI/AAAAAAAAAXo/39zTew66DEc/s144/informatica1.png" width = "150"/>
+            <div class = "textesp">Taller de informática</div>
+          </a>
+	  <a class = "itemesp" href = "<?php echo url_for('/galeria_imagenes/tmecanica') ?>">
+            <img  src= "https://lh5.googleusercontent.com/-zPCenVnACn4/UCFMwJsT8AI/AAAAAAAAAbw/dLCXKWWd8ew/s144/electromecanica1.png" width = "150"/>
+            <div class = "textesp">Taller de mecánica</div>
+          </a>
+	  <a class = "itemesp" href = "<?php echo url_for('/galeria_imagenes/tquimica') ?>">
+            <img  src= "https://lh5.googleusercontent.com/-8yKdDo9r_nY/UCFPMYOCuTI/AAAAAAAAAcw/d2TBga0jJTE/s144/quimica1.png" width = "150"/>
+            <div class = "textesp">Taller de química</div>
+          </a>
+          <a class = "itemesp" href = "<?php echo url_for('/galeria_imagenes/thojalateria') ?>">
+            <img src="https://lh4.googleusercontent.com/-Ja9F6724Oz0/UCFRB-Q7XsI/AAAAAAAAAeo/13HrSeIfATE/s144/hojalateria12.JPG" width = "150"/>
+            <div class = "textesp">Taller de ajustes y hojalatería</div>
+          </a> 
+	</div>
+	<div id = "espder">
+	  <a class = "itemesp" href = "<?php echo url_for('/galeria_imagenes/exteriores') ?>">
+            <img  src= "https://lh4.googleusercontent.com/-M2wMZRpr-nw/UCFPjBlyEGI/AAAAAAAAAdo/PO6aZJR0aaA/s144/exteriores1.png" width = "150"/>
+            <div class = "textesp">Exteriores</div>
+          </a>
+          <a class = "itemesp" href = "<?php echo url_for('/galeria_imagenes/telectricidad') ?>">
+            <img  src= "https://lh4.googleusercontent.com/-TrLe63yaDCQ/UCFHu1QzF6I/AAAAAAAAAZY/_1WQPrbs_uU/s144/electricidad1.png" width = "150"/>
+            <div class = "textesp">Taller de electricidad</div>
+          </a>
+	  <a class = "itemesp" href = "<?php echo url_for('/galeria_imagenes/aulas') ?>">
+            <img  src= "https://lh4.googleusercontent.com/-iNpeZ1wTa8w/UCE-kq7MYsI/AAAAAAAAAW4/DTNH62zKjh0/s144/aulas1.png" width = "150"/>
+            <div class = "textesp">Las aulas</div>
+          </a>
+	</div>
+</section>
+{% endblock %}

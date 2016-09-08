@@ -1,0 +1,62 @@
+{% extends 'base.html.twig' %}
+
+{% block scripts %}
+	{{ parent() }}
+	<script type="text/javascript" src="{{ asset('js/menu.js') }}"></script>
+{% endblock%}
+		
+{% block body %}
+    <div id = "estructura">
+		<nav id = "menu">
+			<ul>
+				<li class = "titmen">Institucional</li>
+				<li class = "itmen" ><a id = "irdireccion"      href = "">Equipo directivo</a></li>
+				<li class = "itmen" ><a id = "irjdepartamentos" href = "">Jefaturas Deptos</a></li>
+				<li class = "itmen" ><a id = "irsecretaria"     href = "">Secretaría</a></li>
+				<li class = "itmen" ><a id = "irofAlumnos"      href = "">Oficina de Alumnos</a></li>
+				<li class = "itmen" ><a id = "irofTecnica"      href = "">Oficina técnica</a></li>
+				<li class = "itmen" ><a id = "ircooperadora"    href = "">Cooperadora</a></li>
+				<li class = "titmen">Alumnos</li>
+				<li class = "itmen" ><a id = "irdescargas"      href = "">Material útil</a></li>
+				<li class = "itmen" ><a id = "ircestudiantes"   href = "">Centro estudiantes</a></li>
+				<li class = "titmen">Quíenes somos</li>
+				<li class = "itmen" ><a id = "irespecialidades" href = "{{ path('specializations') }}">Especialidades</a></li>
+				<li class = "itmen" ><a id = "irhistoria"       href = "{{ path('history') }}">Historia</a></li>
+				<li class = "itmen" ><a id = "irgimagenes"      href = "{{ path('photogallery') }}">Galería de imágenes</a></li>
+			</ul>
+			<section id = "linklicencia">	
+				<a id = "imglic" rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.5/ar/"><img alt="Licencia Creative Commons" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/2.5/ar/88x31.png" /></a>
+			</section>
+		</nav> 
+		{% block content%} {% endblock %}
+		<aside id = "lat-derecho">
+			<time id = "fecha-actual" datetime = "<?PHP echo date(Y).'-'.date(m).'-'.date(d) ?>"> </time>
+			{% block useraccount %} {% endblock %}
+			<article id = "linksUtiles" class = "nav-secundaria">
+				<header><h5>Links útiles</h5></header>
+				<nav>
+					<h5><a href ="http://abc.gov.ar" target= "_blank"> ABC</a></h5>
+					<h5><a href ="http://www.consejoescolar-mdp.gov.ar" target= "_blank"> Consejo escolar </a></h5>
+					<h5><a href ="http://www.me.gov.ar" target = "_blank"> Ministerio nacional de educación </a></h5>
+					<h5><a href ="http://www.sadmardelplata.com.ar" target= "_blank"> SAD Mar del Plata</a></h5>  
+				</nav>
+			</article>
+			<article id = "intGeneral" class = "nav-secundaria">
+				<header><h5>Inter&eacute;s general</h5></header>
+				<nav>
+					<h5><a href = "{{ path('authorities')}}">Autoridades</a></h5>
+					<h5><a href = "">Normas de convivencia</a></h5>
+					<h5><a href = "">Módulo de ingreso</a></h5>
+					<h5><a href = "">Proyecto arroyo la tapera</a></h5>	
+				</nav>
+			</article>
+			<article id = "mesasExam" class = "nav-secundaria">
+				<header><h5>Enlaces rápidos</h5></header>
+				<nav>
+					<h5><a href = "">Mesas de examen</a></h5> 	
+				</nav>
+			</article>
+		</aside>
+		<div class = "piso"> </div>
+    </div>
+{% endblock %}

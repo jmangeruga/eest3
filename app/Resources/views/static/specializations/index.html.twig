@@ -1,0 +1,16 @@
+{% extends 'default.html.twig' %}
+
+{% block content %}
+<section id = "especialidades" class = "contenido">
+	<div id = "espizq">	
+		<a class = "itemesp" href ="{{ path('specializations_autom')}}"> <img src= "{{ asset('images/motor.png') }}"/><div class = "textesp">Automotores</div></a>
+		<a class = "itemesp" href ="{{ path('specializations_elect')}}"> <img src= "{{ asset('images/audiocard.png') }}"/><div class = "textesp"> Electrónica</div></a>
+        <a class = "itemesp" href ="{{ path('specializations_emech')}}"> <img src= "{{ asset('images/tuerca.png') }}"/><div class = "textesp">Electromecánica</div> </a>
+	</div>
+	<div id = "espder">
+		<a class = "itemesp" href ="{{ path('specializations_infor')}}"> <img src= "{{ asset('images/compu.png') }}"/><div class = "textesp">Informática</div></a>
+		<a class = "itemesp" href ="{{ path('specializations_const')}}"><img src= "{{ asset('images/pared.png') }}"/><div class = "textesp"> Construcciones</div></a>
+		<a class = "itemesp" href ="{{ path('specializations_chemi')}}"><img src= "{{ asset('images/quimica.png') }}"/><div class = "textesp">Química</div> </a>
+	</div>
+</section>
+{% endblock %}
