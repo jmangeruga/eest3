@@ -26,7 +26,20 @@ class DefaultController extends Controller
 	 */
 	public function callToDriveAction() {
 		$drive = new GoogleApiWrapper($this->get('logger'));
-		return new Response($drive->getGoogleDriveConnection());
+		try {
+			$files = $drive->getFiles();
+			$filesList = "<ul>";
+			if (count($files->getFiles()) == 0) {
+				$fileList = "<strong> EMPTY </strong>";
+			} else {
+				foreach ($files->getFiles() as $file)
+					$filesList = $filesList."<li>".$file->getName()."</li>";
+				$fileList = $filesList."</ul>";
+			}
+			return new Response($filesList);
+		} catch (GoogleApiWrapperException $e) {
+			return new Response("There was an error trying to retrieve files from GDrive.");
+		}
 	}
 	
 	
