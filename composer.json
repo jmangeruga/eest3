@@ -1,5 +1,6 @@
 {
-    "name": "mange/eest3",
+    "name": "jmangeruga/eest3",
+	"description": "Site of EEST N3 DF SARMIENTO",
     "license": "proprietary",
     "type": "project",
     "autoload": {
@@ -20,7 +21,8 @@
         "symfony/monolog-bundle": "~2.4",
         "sensio/distribution-bundle": "~5.0",
         "sensio/framework-extra-bundle": "^3.0.2",
-        "incenteev/composer-parameter-handler": "~2.0"
+        "incenteev/composer-parameter-handler": "~2.0",
+        "google/apiclient": "^2.0"
     },
     "require-dev": {
         "sensio/generator-bundle": "~3.0",

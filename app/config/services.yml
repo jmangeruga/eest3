@@ -4,6 +4,10 @@ parameters:
 #    parameter_name: value
 
 services:
-#    service_name:
-#        class: AppBundle\Directory\ClassName
-#        arguments: ["@another_service_name", "plain_value", "%parameter_name%"]
+    documents.storer.configuration:
+        class:    AppBundle\Service\DocumentStorer\GoogleApiCredentialsConfiguration
+        arguments: ['@logger']
+
+    documents.storer:
+        class:     AppBundle\Service\DocumentStorer\GoogleApiDocumentStorer
+        arguments: ['@documents.storer.configuration', '%shared.folder.id%', '@logger']
