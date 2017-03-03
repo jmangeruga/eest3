@@ -52,6 +52,7 @@
         "symfony-web-dir": "web",
         "symfony-assets-install": "relative",
         "incenteev-parameters": {
+            "file": "app/config/parameters.yml",
             "env-map": {
                 "secret": "APP_SECRET",
                 "shared.folder.id": "GD_FOLDER_ID"
