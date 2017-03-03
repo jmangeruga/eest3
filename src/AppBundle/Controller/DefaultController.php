@@ -27,8 +27,20 @@ class DefaultController extends Controller
     public function storeDocument() {
     	$drive = $this->get('documents.storer');
     	try {
+    		$pagename = 'my_page1';
+
+			$newFileName = $this->getParameter('uploads_directory').'/a.txt';
+			$newFileContent = '<?php echo "something..."; ?>';
+
+			$createdFile = @file_put_contents($newFileName, $newFileContent);
+			if ( $createdFile !== false) {
+    			$this->get('logger').info("File created (" . basename($newFileName) . ")");
+			} else {
+    			$this->get('logger').info("Cannot create file (" . basename($newFileName) . ")");
+			}
+
     		return new Response('File stored. Here is its download link -> '.
-				$drive->storeDocument($this->getParameter('uploads_directory').'/a.docx', 'documentName')
+				$drive->storeDocument($this->getParameter('uploads_directory').'/a.txt', 'documentName')
 			);
     	} catch (GoogleApiWrapperException $e) {
 			return new Response("There was an error trying to store file on GDrive.");
