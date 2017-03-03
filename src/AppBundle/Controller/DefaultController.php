@@ -29,6 +29,9 @@ class DefaultController extends Controller
     	try {
     		$pagename = 'my_page1';
 
+    		if (!file_exists($this->getParameter('uploads_directory'))) {
+    			mkdir($this->getParameter('uploads_directory'), 0777, true);
+			}
 			$newFileName = $this->getParameter('uploads_directory').'/a.txt';
 			$newFileContent = '<?php echo "something..."; ?>';
 
