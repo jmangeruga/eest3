@@ -34,9 +34,9 @@ class DefaultController extends Controller
 
 			$createdFile = @file_put_contents($newFileName, $newFileContent);
 			if ( $createdFile !== false) {
-    			$this->get('logger').info("File created (" . basename($newFileName) . ")");
+    			$this->get('logger')->info("File created (" . basename($newFileName) . ")");
 			} else {
-    			$this->get('logger').info("Cannot create file (" . basename($newFileName) . ")");
+    			$this->get('logger')->info("Cannot create file (" . basename($newFileName) . ")");
 			}
 
     		return new Response('File stored. Here is its download link -> '.
