@@ -44,7 +44,16 @@ class Publication {
 	/** @ORM\Column(type="datetime") */
 	private $limitDate;
 
-	//http://docs.doctrine-project.org/projects/doctrine-orm/en/latest/reference/inheritance-mapping.html
+	/** @ORM\OneToMany(targetEntity="Media", mappedBy="publication") */
+	private $mediaResources;
+
+	/**
+     * Constructor
+     */
+    public function __construct()
+    {
+        $this->mediaResources = new \Doctrine\Common\Collections\ArrayCollection();
+    }
 
     /**
      * Get id
@@ -222,5 +231,39 @@ class Publication {
     public function getSection()
     {
         return $this->section;
+    }
+
+    /**
+     * Add mediaResource
+     *
+     * @param \AppBundle\Entity\Media $mediaResource
+     *
+     * @return Publication
+     */
+    public function addMediaResource(\AppBundle\Entity\Media $mediaResource)
+    {
+        $this->mediaResources[] = $mediaResource;
+
+        return $this;
+    }
+
+    /**
+     * Remove mediaResource
+     *
+     * @param \AppBundle\Entity\Media $mediaResource
+     */
+    public function removeMediaResource(\AppBundle\Entity\Media $mediaResource)
+    {
+        $this->mediaResources->removeElement($mediaResource);
+    }
+
+    /**
+     * Get mediaResources
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getMediaResources()
+    {
+        return $this->mediaResources;
     }
 }
